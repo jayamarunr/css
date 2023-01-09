@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-end</title>
+    <style>
+        body {
+            background-color: #E7E9EB;
+        }
+
+        #main {
+            background-color: #fff;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+        }
+
+        #main div {
+            flex: 1;
+        }
+
+        #myBlueDiv {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        The align-self Property
+    </h1>
+    <div id="main">
+        <div style="background-color: coral;">
+            This DIV has little content.
+        </div>
+        <div id="myBlueDiv" style="background-color: lightblue;">
+            This DIV has more content and usually this can be a problem when aligning multiple DIV elements.
+        </div>
+        <div style="background-color: lightgreen;">
+            This <br>DIV<br>has<br>many<br>line<br>breaks.
+        </div>
+    </div>
+</body>
+
+</html>
